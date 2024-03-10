@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #e4e6f2;
+}
+.main-nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  z-index: 1;
+
+  flex-wrap: nowrap;
+}
+.nav-bar-cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  padding: 0 20px;
+  width: 100%;
+}
+.main-nav .first-two-nav-comp,
+.main-nav .second-two-nav-comp {
+  display: flex;
+}
+.main-nav .first-two-nav-comp .first-one,
+.main-nav .first-two-nav-comp .second-one,
+.second-nav-bar-components-first-comp,
+.second-nav-bar-components-second-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  flex-wrap: nowrap;
+}
+.first-one:hover,
+.second-one:hover,
+.second-nav-bar-components-first-comp:hover,
+.second-nav-bar-components-second-comp:hover {
+  background-color: #f2f2f2;
+}
+/************************************************************************/
+.outside-cont {
+  margin-top: 48px;
+  padding: 20px;
+  max-width: 970px;
+  width: 100%;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  max-width: 970px;
+  width: 100%;
+}
+.main-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 48px;
+  color: #333333;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.main-container h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+}
+.forgot-password{
+  font-size: 18px;
+}
+.main-container h6 a,.forgot-password a {
+  text-decoration: none;
+  color: #45b1ff;
+}
+.main-container h6 a:hover,.forgot-password a:hover {
+  text-decoration: underline;
+}
+.main-container form {
+  max-width: 400px;
+  width: 100%;
+}
+.main-container form p {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.main-container form p input {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+}
+.main-container form p input:focus {
+  outline: none;
+  border: #1e81ec 2px solid;
+}
+.main-container .sign-up-btn {
+  padding: 10px 12px;
+  border: none;
+  border-bottom: 4px solid #1e81ec;
+  color: #ffffff;
+  font-size: 18px;
+  background-color: #4d9bf0;
+  cursor: pointer;
+}
+.main-container .sign-up-btn:hover {
+  background-color: #378fec;
+}

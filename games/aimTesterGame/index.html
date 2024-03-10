@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aim tester</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-bar-cont">
+        <div class="first-two-nav-comp">
+          <a class="first-one" href="/games/reacrionGame/index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              width="8.43px"
+              style="margin-right: 8px; opacity: 0.2"
+            >
+              <path
+                fill="currentColor"
+                d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+              ></path>
+            </svg>
+            HUMAN BENCHMARK
+          </a>
+          <a class="second-one" href="/index.html" > DASHBOARD </a>
+        </div>
+        <div class="second-two-nav-comp">
+          <a class="second-nav-bar-components-first-comp" href="/registerStuff/signIn.html"> SIGN UP </a>
+          <a class="second-nav-bar-components-second-comp" href="/registerStuff/logIn.html"> LOGIN </a>
+        </div>
+      </div>
+    </nav>
+    <div class="start-menu">
+      <div><h1>Aim Trainer</h1></div>
+      <div class="target-cont">
+        <div class="target">
+          <div class="target-background"></div>
+          <div class="circles" style="width: 33.333px; height: 33.333px"></div>
+          <div class="circles" style="width: 66.667px; height: 66.667px"></div>
+          <div class="circles" style="width: 100px; height: 100px"></div>
+          <div class="lines" style="width: 2px; height: 100px"></div>
+          <div
+            class="lines"
+            id="horizline"
+            style="width: 100px; height: 2px"
+          ></div>
+        </div>
+      </div>
+
+      <p>Hit 30 targets as quickly as you can.</p>
+      <p>Click the target above to begin.</p>
+    </div>
+    <div class="play-screen hide">
+      <div class="up-text">Remaining <span>30</span></div>
+      <div class="play-zone">
+        <div class="target-cont-play">
+          <div class="target" id="play-target">
+            <div class="target-background"></div>
+            <div
+              class="circles"
+              style="width: 33.333px; height: 33.333px"
+            ></div>
+            <div
+              class="circles"
+              style="width: 66.667px; height: 66.667px"
+            ></div>
+            <div class="circles" style="width: 100px; height: 100px"></div>
+            <div class="lines" style="width: 2px; height: 100px"></div>
+            <div
+              class="lines"
+              id="horizline"
+              style="width: 100px; height: 2px"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="result-screen hide">
+      <div class="logo">
+        <svg
+          width="128"
+          height="128"
+          viewBox="0 0 128 128"
+          fill="currentcolor"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 80px; height: 80px"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M64 118C93.8234 118 118 93.8234 118 64C118 34.1766 93.8234 10 64 10C34.1766 10 10 34.1766 10 64C10 93.8234 34.1766 118 64 118ZM64 128C99.3462 128 128 99.3462 128 64C128 28.6538 99.3462 0 64 0C28.6538 0 0 28.6538 0 64C0 99.3462 28.6538 128 64 128Z"
+            fill="currentcolor"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M64 97C82.2254 97 97 82.2254 97 64C97 45.7746 82.2254 31 64 31C45.7746 31 31 45.7746 31 64C31 82.2254 45.7746 97 64 97ZM64 107C87.7482 107 107 87.7482 107 64C107 40.2518 87.7482 21 64 21C40.2518 21 21 40.2518 21 64C21 87.7482 40.2518 107 64 107Z"
+            fill="currentcolor"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M64 76C70.6274 76 76 70.6274 76 64C76 57.3726 70.6274 52 64 52C57.3726 52 52 57.3726 52 64C52 70.6274 57.3726 76 64 76ZM64 86C76.1503 86 86 76.1503 86 64C86 51.8497 76.1503 42 64 42C51.8497 42 42 51.8497 42 64C42 76.1503 51.8497 86 64 86Z"
+            fill="currentcolor"
+          ></path>
+        </svg>
+      </div>
+      <div class="text-below-logo">Average time per target</div>
+      <div class="result">555<span>ms</span></div>
+      <p class="save-score-text">Save your score to see how you compare.</p>
+      <div class="btns">
+        <button class="save-score-btn">Save score</button>
+        <button class="try-again-btn">Try again</button>
+      </div>
+    </div>
+  </body>
+  <script defer src="js.js">
+    
+  </script>
+</html>

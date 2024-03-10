@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --mes: calc(1vh + 1vw);
+}
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2b87d1;
+  color: #fff;
+  overflow: hidden;
+  max-height: calc(var(--mes) * 116);
+  max-width: calc(var(--mes) * 116);
+}
+.main-nav {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  z-index: 1;
+  top: 0;
+  flex-wrap: nowrap;
+}
+.nav-bar-cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  padding: 0 20px;
+  width: 100%;
+}
+.main-nav .first-two-nav-comp,
+.main-nav .second-two-nav-comp {
+  display: flex;
+}
+.main-nav .first-two-nav-comp .first-one,
+.main-nav .first-two-nav-comp .second-one,
+.second-nav-bar-components-first-comp,
+.second-nav-bar-components-second-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  flex-wrap: nowrap;
+}
+.first-one:hover,
+.second-one:hover,
+.second-nav-bar-components-first-comp:hover,
+.second-nav-bar-components-second-comp:hover {
+  background-color: #f2f2f2;
+}
+body.wait {
+  background: #ce2636;
+}
+body.click {
+  background: #4bdb6a;
+}
+.startMenu {
+  max-height: calc(var(--mes) * 100);
+  max-width: calc(var(--mes) * 100);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: calc(var(--mes) * 10) 0px;
+  animation: startScreenAppearAni 0.65s;
+}
+@keyframes startScreenAppearAni {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  animation: logoAnimation 2s linear infinite;
+}
+@keyframes logoAnimation {
+  0% {
+    opacity: 0.6;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.gameName {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.startMenu.hide {
+  display: none;
+}
+/*********************play area********************/
+.playArea {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  max-height: calc(var(--mes) * 100);
+  max-width: calc(var(--mes) * 100);
+}
+.dontClick,
+.resultBox,
+.tooSoon,
+.clickScreen {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  max-height: calc(var(--mes) * 100);
+  max-width: calc(var(--mes) * 100);
+  height: calc(var(--mes) * 35);
+}
+.dontClick,
+.clickScreen,
+.tooSoon,
+.resultBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.dots,
+.timer {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.playAreaText,
+.playAreaTextClick,
+.resultinMs,
+.playAreaTextDontClick {
+  font-size: 80px;
+}
+.playAreaTextTs {
+  font-size: 80px;
+  margin-bottom: 4px;
+}
+.toosoontxbottext,
+.clickaftertext {
+  font-size: 24px;
+}
+.tooSoon.hide,
+.clickScreen.hide,
+.dontClick.hide,
+.resultBox.hide,
+.playArea.hide,
+.endResultBox.hide {
+  display: none;
+}
+.endWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.endLogo {
+  height: 80px;
+  width: 62px;
+}
+.EndgameName {
+  font-size: 24px;
+  margin-top: 36px;
+}
+.endresult {
+  font-size: 80px;
+  margin-bottom: 36px;
+}
+.endSaveScore,
+.endTryAgain {
+  padding: 12px 30px;
+  margin: 2px 2px 0px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background 0.19s;
+}
+.endSaveScore:hover,
+.endTryAgain:hover {
+  background: #fff;
+}
+.endTryAgain {
+  background: #95c3e8;
+}
+.endSaveScore {
+  background: #ffd154;
+}
+@media (max-width: 500px) {
+  .gameName {
+    font-size: 41px;
+  }
+  .description,
+  .clickaftertext {
+    font-size: 27.5px;
+  }
+  .playAreaTextTs,
+  .resultinMs,
+  .playAreaTextClick,
+  .playAreaTextDontClick,
+  .endresult {
+    font-size: 41px;
+  }
+  .dots,
+  .timer {
+    width: 45px;
+    height: 45px;
+  }
+}

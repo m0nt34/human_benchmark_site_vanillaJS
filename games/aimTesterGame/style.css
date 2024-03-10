@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #2b87d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.main-nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  z-index: 1;
+  top: 0;
+  flex-wrap: nowrap;
+}
+.nav-bar-cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  padding: 0 20px;
+  width: 100%;
+}
+.main-nav .first-two-nav-comp,
+.main-nav .second-two-nav-comp {
+  display: flex;
+}
+.main-nav .first-two-nav-comp .first-one,
+.main-nav .first-two-nav-comp .second-one,
+.second-nav-bar-components-first-comp,
+.second-nav-bar-components-second-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  flex-wrap: nowrap;
+}
+.first-one:hover,
+.second-one:hover,
+.second-nav-bar-components-first-comp:hover,
+.second-nav-bar-components-second-comp:hover {
+  background-color: #f2f2f2;
+}
+/*******************************************************************/
+.start-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+@keyframes startScreenAppearAni {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.target-cont {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 34px;
+  animation: 0.1s startTargetAppearAni;
+}
+@keyframes startTargetAppearAni {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.target {
+  cursor: pointer;
+  transform: translate(50%, 50%);
+}
+.target-background {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  transform: translate(-50%, -50%);
+}
+.circles {
+  position: absolute;
+  border-radius: 50%;
+  top: 50px;
+  border: 2px solid white;
+  transform: translate(-50%, -50%);
+}
+.lines {
+  position: absolute;
+  background: white;
+  top: 50px;
+  transform: translate(-50%, -50%);
+}
+.start-menu div h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  animation: startScreenAppearAni 0.55s;
+}
+.start-menu p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  flex-wrap: wrap;
+  animation: startScreenAppearAni 0.55s;
+}
+.start-menu.hide {
+  display: none;
+}
+/*****************************************play zone*************************************************/
+.up-text {
+  color: #a8ceec;
+  font-size: 28px;
+  text-align: center;
+}
+.up-text span {
+  color: #fff;
+}
+.play-zone {
+  position: relative;
+  width: 870px;
+  height: 460px;
+}
+.target-cont-play {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+}
+
+.play-screen {
+  cursor: pointer;
+}
+.play-screen.hide {
+  display: none;
+}
+/*****************************************result screen*************************************************/
+.result-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.text-below-logo {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+.result {
+  font-size: 80px;
+  margin-bottom: 25px;
+}
+.save-score-text {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.save-score-btn,
+.try-again-btn {
+  border: none;
+  padding: 12px 30px;
+  border-radius: 3px;
+  background-color: #ffd154;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.save-score-btn:hover,
+.try-again-btn:hover {
+  background-color: #fff;
+}
+.try-again-btn {
+  background-color: #95c3e8;
+  margin-left: 5px;
+}
+.logo {
+  margin-bottom: 30px;
+}
+.result-screen.hide {
+  display: none;
+}

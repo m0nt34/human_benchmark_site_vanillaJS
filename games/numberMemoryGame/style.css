@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+body { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #2b87d1;
+}
+body.win{
+    -webkit-animation: bodyShine 1s;
+}
+body.lose{
+    -webkit-animation: bodyShineRed 1s;
+    
+}
+.main-nav {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    height: 48px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+    z-index: 1;
+    top: 0;
+    flex-wrap: nowrap;
+  }
+  .nav-bar-cont {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1010px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .main-nav .first-two-nav-comp,
+  .main-nav .second-two-nav-comp {
+    display: flex;
+  }
+  .main-nav .first-two-nav-comp .first-one,
+  .main-nav .first-two-nav-comp .second-one,
+  .second-nav-bar-components-first-comp,
+  .second-nav-bar-components-second-comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    flex-wrap: nowrap;
+  }
+  .first-one:hover,
+  .second-one:hover,
+  .second-nav-bar-components-first-comp:hover,
+  .second-nav-bar-components-second-comp:hover {
+    background-color: #f2f2f2;
+  }
+@keyframes bodyShine{
+    50%{
+        background: #3aa4f9;
+    }100%{
+        background: #2b87d1;
+    }
+}
+@keyframes bodyShineRed{
+    0% {
+        background: #e26a6a;
+      }
+      100% {
+        background: #2b87d1;
+      }
+}
+.start-menu {
+    user-select: none;
+    animation: startScreenAppearAni 0.65s;
+}
+@keyframes startScreenAppearAni {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: logoAnimation 2s infinite;
+    margin-bottom: 44px;
+}
+@-webkit-keyframes logoAnimation {
+    0% {
+        opacity: 0.6;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+.game-name h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.description h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-Btn {
+    background-color: #ffd154;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.start-Btn:hover {
+    background-color: #fff;
+}
+.start-menu.hide {
+    display: none;
+}
+/********************************************start menu ends here******************************************************/
+.show-num-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.number {
+    font-size: 100px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.bcktimer {
+    background: #224061;
+    height: 2px;
+    width: 120px;
+}
+#frttimer {
+    
+    background-color: #fff;
+    height: 2px;
+    width: 120px;
+    position: absolute;
+    transform: translateY(-2px);
+    transition: 0.06s;
+}
+.show-num-screen.hide {
+    display: none;
+}
+/********************************************show nums screen ends here******************************************************/
+.enter-showed-num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.enter-showed-num.hide {
+    display: none;
+}
+.question h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+.question {
+    padding-bottom: 3px;
+    text-align: center;
+}
+.press-enter {
+    font-weight: 500;
+    font-size: 18px;
+    color: #aacfed;
+    padding-bottom: 26px;
+    text-align: center;
+}
+.submit-btn {
+    margin-top: 32px;
+    background-color: #ffd154;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.submit-btn:hover {
+    background-color: #fff;
+}
+.input-field-container {
+    max-width: 950px;
+    margin-right: 20px;
+}
+
+.input-seen-num {
+    width: 100%;
+
+    background: #226cbb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.input-seen-num:focus {
+    outline: none !important;
+    border: solid 3px #54a2dd;
+}
+/********************************************enter seen nums screen ends here******************************************************/
+.win-screen.hide {
+    display: none;
+
+    user-select: none;
+}
+.answer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #aacfed;
+    font-size: 20px;
+}
+.answer span {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 2px;
+}
+.your-answer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #aacfed;
+    font-size: 20px;
+}
+.your-answer span {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 2px;
+    margin-bottom: 26px;
+}
+.level {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+}
+.btncont {
+    display: flex;
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.nextBtn,.saveScoreBtn {
+    margin-top: 32px;
+    background-color: #ffd154;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.nextBtn:hover {
+    background-color: #fff;
+}
+/********************************************wind and answer screen ends here******************************************************/
+.lose-screen.hide{
+    display: none;
+}
+.tryAgainBtn{
+    margin-top: 32px;
+    background-color: #95c3e8;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.1s;
+    margin-left: 10px;
+}
+.tryAgainBtn:hover ,.saveScoreBtn:hover{
+    background-color: #fff;
+}
+.lose-screen p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 35px;
+    text-align: center;
+    flex-wrap: wrap;
+}

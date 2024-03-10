@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #2b87d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  user-select: none;
+}
+.main-nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  z-index: 1;
+  top: 0;
+  flex-wrap: nowrap;
+}
+.nav-bar-cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  padding: 0 20px;
+  width: 100%;
+}
+.main-nav .first-two-nav-comp,
+.main-nav .second-two-nav-comp {
+  display: flex;
+}
+.main-nav .first-two-nav-comp .first-one,
+.main-nav .first-two-nav-comp .second-one,
+.second-nav-bar-components-first-comp,
+.second-nav-bar-components-second-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  flex-wrap: nowrap;
+}
+.first-one:hover,
+.second-one:hover,
+.second-nav-bar-components-first-comp:hover,
+.second-nav-bar-components-second-comp:hover {
+  background-color: #f2f2f2;
+}
+/************************************************************************/
+.lives-and-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26px;
+  flex-wrap: wrap;
+  font-size: 24px;
+  color: #87c5eb;
+}
+.lives-and-score .lives-left {
+  color: #fff;
+  border-left: solid 2.5px #87c5eb;
+  padding-left: 7px;
+  margin-right: 25px;
+}
+.lives-and-score .score-earned {
+  color: #fff;
+  border-left: solid 2.5px #87c5eb;
+  padding-left: 7px;
+  margin-right: 25px;
+}
+.random-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 52px;
+  margin-top: 34px;
+  height: 52px;
+  color: #fff;
+}
+.Btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.seenBtn,
+.newBtn,
+.start-btn,
+.save-score-btn,
+.try-again-btn {
+  padding: 12px 30px;
+  background-color: #ffd154;
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  transition: background 0.15s;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.newBtn {
+  margin-left: 20px;
+}
+.seenBtn:hover,
+.newBtn:hover,
+.start-btn:hover,
+.try-again-btn:hover,
+.save-score-btn:hover {
+  background-color: #fff;
+}
+.play-area.hide {
+  display: none;
+  pointer-events: none;
+}
+.start-menu {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: startScreenAppearAni 0.65s;
+}
+.game-name {
+  font-size: 78px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.desctription {
+  font-size: 18px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.logo {
+  margin-bottom: 35px;
+  animation: logoAni 2.3s infinite;
+}
+@keyframes logoAni {
+  0% {
+    opacity: 0.6;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes startScreenAppearAni {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.start-menu.hide {
+  display: none;
+  pointer-events: none;
+}
+.end-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.end-logo {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-menu h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+.end-menu h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 35px;
+}
+.end-menu h1 span {
+  padding-right: 20px;
+}
+.end-description {
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 18px;
+}
+.end-btns {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+.try-again-btn {
+  background-color: #95c3e8;
+  margin-left: 3px;
+}
+.save-score-btn {
+  margin-right: 3px;
+}
+.end-menu.hide {
+  display: none;
+  pointer-events: none;
+}

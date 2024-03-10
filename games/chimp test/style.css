@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b87d1;
+}
+.main-nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  z-index: 1;
+  top: 0;
+  flex-wrap: nowrap;
+}
+.nav-bar-cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  padding: 0 20px;
+  width: 100%;
+}
+.main-nav .first-two-nav-comp,
+.main-nav .second-two-nav-comp {
+  display: flex;
+}
+.main-nav .first-two-nav-comp .first-one,
+.main-nav .first-two-nav-comp .second-one,
+.second-nav-bar-components-first-comp,
+.second-nav-bar-components-second-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  flex-wrap: nowrap;
+}
+.first-one:hover,
+.second-one:hover,
+.second-nav-bar-components-first-comp:hover,
+.second-nav-bar-components-second-comp:hover {
+  background-color: #f2f2f2;
+}
+/*******************************************************************/
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 128px;
+  width: 128px;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+.logo .sqr,
+.sqrwithhole {
+  height: 58px;
+  width: 58px;
+  background: #fff;
+  border-radius: 10px;
+}
+.sqrwithhole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sqrwithhole div {
+  background: #2b87d1;
+  height: 38px;
+  width: 38px;
+}
+.text {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.desc {
+  font-size: 18px;
+  color: #fff;
+
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.desc p {
+  line-height: 28px;
+}
+.startBtn,
+.continueBtn,
+.saveSoreBtn {
+  background: #ffd154;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 3.5px;
+  font-weight: 600;
+  transition: background 0.14s;
+  cursor: pointer;
+}
+.startBtn:hover,
+.continueBtn:hover,
+.saveSoreBtn:hover,
+.tryAgainBtn:hover {
+  background: #fff;
+}
+.start-menu {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  animation: startScreenAppearAni 0.65s;
+}
+@keyframes startScreenAppearAni {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.start-menu.hide {
+  display: none;
+}
+/*****************************************play area************************************/
+
+.play-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  user-select: none;
+}
+.board {
+  width: 720px;
+  height: 450px;
+}
+.board section {
+  width: 100%;
+  height: 90px;
+  display: flex;
+}
+.playsqrs {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  cursor: pointer;
+}
+.playsqrs.withnum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.102);
+}
+.playsqrs.withnum.hide {
+  background: #fff;
+}
+.playsqrs.withnum:hover {
+  border: 5px solid rgb(255, 255, 255, 0.495);
+}
+.play-area.hide {
+  display: none;
+}
+/*****************************************continue screen************************************/
+.continue-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  user-select: none;
+}
+.numberText {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+.result-of-nums {
+  font-size: 80px;
+  font-weight: 500;
+}
+.strikes {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.x-of-3 {
+  font-size: 40px;
+}
+.num {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.continue-screen.hide {
+  display: none;
+}
+/*****************************************end screen************************************/
+.end-logo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  width: 80px;
+  gap: 7.5px;
+  margin-bottom: 34px;
+}
+.end-logo .esqr,
+.esqrwithhole {
+  height: 36.25px;
+  width: 36.25px;
+  background: #fff;
+  border-radius: 5.8px;
+}
+.esqrwithhole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.esqrwithhole div {
+  background: #2b87d1;
+  height: 24px;
+  width: 24px;
+}
+.tryAgainBtn {
+  background: #95c3e8;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 3.5px;
+  font-weight: 600;
+  transition: background 0.14s;
+  cursor: pointer;
+}
+.scoretxt {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.levelNum {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.endDesc {
+  font-size: 18px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.btns {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  user-select: none;
+}
+.end-screen.hide {
+  display: none;
+}

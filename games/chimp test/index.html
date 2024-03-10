@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chimp test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-bar-cont">
+        <div class="first-two-nav-comp">
+          <a class="first-one" href="/games/reacrionGame/index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              width="8.43px"
+              style="margin-right: 8px; opacity: 0.2"
+            >
+              <path
+                fill="currentColor"
+                d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+              ></path>
+            </svg>
+            HUMAN BENCHMARK
+          </a>
+          <a class="second-one" href="/index.html"> DASHBOARD </a>
+        </div>
+        <div class="second-two-nav-comp">
+          <a class="second-nav-bar-components-first-comp" href=""> SIGN UP </a>
+          <a class="second-nav-bar-components-second-comp"> LOGIN </a>
+        </div>
+      </div>
+    </nav>
+    <div class="start-menu">
+      <div class="logo">
+        <span class="sqr"></span>
+        <span class="sqr"></span>
+        <span class="sqr"></span>
+        <span class="sqrwithhole"><div></div></span>
+      </div>
+      <div class="text">
+        <span>Are You Smarter Than a Chimpanzee?</span>
+      </div>
+      <div class="desc">
+        <p>Click the squares in order according to their numbers.</p>
+        <p>The test will get progressively harder.</p>
+      </div>
+      <button class="startBtn">Start Test</button>
+    </div>
+    <div class="play-area hide">
+      <div class="board">
+        <section>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+        </section>
+        <section>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+        </section>
+        <section>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+        </section>
+        <section>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+        </section>
+        <section>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+          <span class="playsqrs"></span>
+        </section>
+      </div>
+    </div>
+    <div class="continue-screen hide">
+      <div class="num">
+        <div class="numberText">NUMBERS</div>
+        <h1 class="result-of-nums">4</h1>
+      </div>
+      <div class="strikes">
+        <span>STRIKES</span>
+        <div class="x-of-3"><span>0</span> of 3</div>
+      </div>
+      <button class="continueBtn">Continue</button>
+    </div>
+    <div class="end-screen hide">
+      <div class="end-logo">
+        <span class="esqr"></span>
+        <span class="esqr"></span>
+        <span class="esqr"></span>
+        <span class="esqrwithhole"><div></div></span>
+      </div>
+      <div class="scoretxt">Score</div>
+      <div class="levelNum">4</div>
+      <div class="endDesc">
+        <p style="margin-bottom: 20px">
+          Save your score to see how you compare.
+        </p>
+      </div>
+      <div class="btns">
+        <button class="saveSoreBtn">Save score</button>
+        <button class="tryAgainBtn">Try again</button>
+      </div>
+    </div>
+  </body>
+  <script defer src="js.js"></script>
+</html>
