@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -12,6 +13,7 @@ body {
   background: #2b87d1;
   user-select: none;
 }
+
 .main-nav {
   display: flex;
   position: absolute;
@@ -25,6 +27,7 @@ body {
   top: 0;
   flex-wrap: nowrap;
 }
+
 .nav-bar-cont {
   display: flex;
   justify-content: space-between;
@@ -32,10 +35,12 @@ body {
   padding: 0 20px;
   width: 100%;
 }
+
 .main-nav .first-two-nav-comp,
 .main-nav .second-two-nav-comp {
   display: flex;
 }
+
 .main-nav .first-two-nav-comp .first-one,
 .main-nav .first-two-nav-comp .second-one,
 .second-nav-bar-components-first-comp,
@@ -49,25 +54,32 @@ body {
   color: #000;
   flex-wrap: nowrap;
 }
+
 .first-one:hover,
 .second-one:hover,
 .second-nav-bar-components-first-comp:hover,
 .second-nav-bar-components-second-comp:hover {
   background-color: #f2f2f2;
 }
+
 /*******************************************************************/
+
 body.lose {
   -webkit-animation: redBody 1s;
 }
+
 .insq1.lose {
   -webkit-animation: redBody 1s;
 }
+
 body.win {
   -webkit-animation: whiteBody 0.6s;
 }
+
 .block.win {
   -webkit-animation: whiteBodyForBlocks 0.6s;
 }
+
 @-webkit-keyframes redBody {
   0% {
     background: #e26a6a;
@@ -76,6 +88,7 @@ body.win {
     background: #2b87d1;
   }
 }
+
 @-webkit-keyframes whiteBodyForBlocks {
   50% {
     background: #3084d8;
@@ -84,6 +97,7 @@ body.win {
     background: #2573c1;
   }
 }
+
 @-webkit-keyframes whiteBody {
   50% {
     background: #3a9cec;
@@ -92,12 +106,15 @@ body.win {
     background: #2b87d1;
   }
 }
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /*******************start menu********************/
+
 .startMenu {
   display: flex;
   flex-direction: column;
@@ -105,6 +122,7 @@ body.win {
   align-items: center;
   animation: startScreenAppearAni 0.65s;
 }
+
 @keyframes startScreenAppearAni {
   0% {
     opacity: 0;
@@ -115,6 +133,7 @@ body.win {
     transform: translateY(0px);
   }
 }
+
 .logo {
   display: flex;
   flex-wrap: wrap;
@@ -123,6 +142,7 @@ body.win {
   height: 100px;
   -webkit-animation: logoAnimation 2.1s linear infinite;
 }
+
 @-webkit-keyframes logoAnimation {
   0% {
     opacity: 0.6;
@@ -134,6 +154,7 @@ body.win {
     opacity: 0.6;
   }
 }
+
 .fsquare,
 .ssquare,
 .tsquare,
@@ -141,7 +162,6 @@ body.win {
   width: 45px;
   height: 45px;
   background: #fff;
-
   border-radius: 8px;
   display: block;
 }
@@ -151,11 +171,13 @@ body.win {
   justify-content: center;
   align-items: center;
 }
+
 .fthsquare .insq {
   background: #2b87d1;
   width: 30px;
   height: 30px;
 }
+
 .title {
   color: #fff;
   font-size: 61px;
@@ -163,6 +185,7 @@ body.win {
   text-align: center;
   margin-top: 30px;
 }
+
 .mtp {
   font-size: 24px;
   color: #fff;
@@ -170,6 +193,7 @@ body.win {
   text-align: center;
   margin-top: 15px;
 }
+
 .startBtn {
   padding: 12px 30px;
   border: none;
@@ -182,13 +206,17 @@ body.win {
   cursor: pointer;
   transition: background 0.24s;
 }
+
 .startBtn:hover {
   background: #ececec;
 }
+
 .startMenu.hide {
   display: none;
 }
+
 /********************play zone*********************/
+
 .level {
   font-size: 28px;
   color: #accbe4;
@@ -196,12 +224,15 @@ body.win {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .level span {
   color: #fff;
 }
+
 .board section {
   display: flex;
 }
+
 .block {
   height: 120px;
   width: 120px;
@@ -210,9 +241,11 @@ body.win {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .block.flash {
   -webkit-animation: flash 0.6s;
 }
+
 @-webkit-keyframes flash {
   2% {
     background: #eef6ff;
@@ -224,16 +257,20 @@ body.win {
     background: #2573c1;
   }
 }
+
 .playZone.hide {
   display: none;
 }
+
 /********************lose screen*********************/
+
 .loseMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .logo1 {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +278,7 @@ body.win {
   width: 80px;
   height: 80px;
 }
+
 .fsquare1,
 .ssquare1,
 .tsquare1,
@@ -248,7 +286,6 @@ body.win {
   width: 36px;
   height: 36px;
   background: #fff;
-
   border-radius: 8px;
   display: block;
 }
@@ -258,11 +295,13 @@ body.win {
   justify-content: center;
   align-items: center;
 }
+
 .fthsquare1 .insq1 {
   background: #2b87d1;
   width: 24px;
   height: 24px;
 }
+
 .title1 {
   color: #fff;
   font-size: 24px;
@@ -271,11 +310,13 @@ body.win {
   margin-top: 40px;
   margin-bottom: 10px;
 }
+
 .endBtns {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .saveSc {
   padding: 12px 30px;
   border: none;
@@ -288,6 +329,7 @@ body.win {
   cursor: pointer;
   transition: background 0.24s;
 }
+
 .tryAg {
   padding: 12px 30px;
   border: none;
@@ -300,19 +342,24 @@ body.win {
   cursor: pointer;
   transition: background 0.24s;
 }
+
 .saveSc:hover {
   background: #ececec;
 }
+
 .tryAg:hover {
   background: #ececec;
 }
+
 .loseMenu.hide {
   display: none;
 }
+
 .levelAtTheEnd {
   font-size: 80px;
   color: #fff;
 }
+
 .endTextUseless {
   margin-top: 35px;
   color: #fff;

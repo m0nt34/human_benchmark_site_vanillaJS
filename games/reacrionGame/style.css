@@ -1,12 +1,17 @@
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+/* Root variables */
 :root {
   --mes: calc(1vh + 1vw);
 }
+
+/* Body styles */
 body {
   display: flex;
   position: relative;
@@ -19,6 +24,8 @@ body {
   max-height: calc(var(--mes) * 116);
   max-width: calc(var(--mes) * 116);
 }
+
+/* Main navigation styles */
 .main-nav {
   display: flex;
   position: absolute;
@@ -32,6 +39,7 @@ body {
   top: 0;
   flex-wrap: nowrap;
 }
+
 .nav-bar-cont {
   display: flex;
   justify-content: space-between;
@@ -39,10 +47,12 @@ body {
   padding: 0 20px;
   width: 100%;
 }
+
 .main-nav .first-two-nav-comp,
 .main-nav .second-two-nav-comp {
   display: flex;
 }
+
 .main-nav .first-two-nav-comp .first-one,
 .main-nav .first-two-nav-comp .second-one,
 .second-nav-bar-components-first-comp,
@@ -56,18 +66,24 @@ body {
   color: #000;
   flex-wrap: nowrap;
 }
+
 .first-one:hover,
 .second-one:hover,
 .second-nav-bar-components-first-comp:hover,
 .second-nav-bar-components-second-comp:hover {
   background-color: #f2f2f2;
 }
+
+/* Body class-based styles */
 body.wait {
   background: #ce2636;
 }
+
 body.click {
   background: #4bdb6a;
 }
+
+/* Start menu styles */
 .startMenu {
   max-height: calc(var(--mes) * 100);
   max-width: calc(var(--mes) * 100);
@@ -77,6 +93,7 @@ body.click {
   padding: calc(var(--mes) * 10) 0px;
   animation: startScreenAppearAni 0.65s;
 }
+
 @keyframes startScreenAppearAni {
   0% {
     opacity: 0;
@@ -87,6 +104,12 @@ body.click {
     transform: translateY(0px);
   }
 }
+
+.startMenu.hide {
+  display: none;
+}
+
+/* Wrapper styles */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -94,12 +117,15 @@ body.click {
   text-align: center;
   flex-wrap: wrap;
 }
+
+/* Logo animation styles */
 .logo {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   animation: logoAnimation 2s linear infinite;
 }
+
 @keyframes logoAnimation {
   0% {
     opacity: 0.6;
@@ -112,27 +138,21 @@ body.click {
   }
 }
 
+/* Game name styles */
 .gameName {
   font-size: 80px;
   margin-bottom: 10px;
 }
+
+/* Description styles */
 .description {
   display: flex;
   flex-direction: column;
   font-size: 24px;
 }
 
-.startMenu.hide {
-  display: none;
-}
-/*********************play area********************/
-.playArea {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  max-height: calc(var(--mes) * 100);
-  max-width: calc(var(--mes) * 100);
-}
+/* Play area styles */
+.playArea,
 .dontClick,
 .resultBox,
 .tooSoon,
@@ -142,8 +162,12 @@ body.click {
   cursor: pointer;
   max-height: calc(var(--mes) * 100);
   max-width: calc(var(--mes) * 100);
-  height: calc(var(--mes) * 35);
 }
+
+.playArea {
+  cursor: pointer;
+}
+
 .dontClick,
 .clickScreen,
 .tooSoon,
@@ -155,26 +179,33 @@ body.click {
   user-select: none;
 }
 
+/* Dot and timer styles */
 .dots,
 .timer {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
 }
+
+/* Play area text styles */
 .playAreaText,
 .playAreaTextClick,
 .resultinMs,
 .playAreaTextDontClick {
   font-size: 80px;
 }
+
 .playAreaTextTs {
   font-size: 80px;
   margin-bottom: 4px;
 }
+
 .toosoontxbottext,
 .clickaftertext {
   font-size: 24px;
 }
+
+/* Hide elements */
 .tooSoon.hide,
 .clickScreen.hide,
 .dontClick.hide,
@@ -183,24 +214,34 @@ body.click {
 .endResultBox.hide {
   display: none;
 }
+
+/* End wrapper styles */
 .endWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+/* End logo styles */
 .endLogo {
   height: 80px;
   width: 62px;
 }
+
+/* End game name styles */
 .EndgameName {
   font-size: 24px;
   margin-top: 36px;
 }
+
+/* End result styles */
 .endresult {
   font-size: 80px;
   margin-bottom: 36px;
 }
+
+/* End button styles */
 .endSaveScore,
 .endTryAgain {
   padding: 12px 30px;
@@ -214,16 +255,21 @@ body.click {
   cursor: pointer;
   transition: background 0.19s;
 }
+
 .endSaveScore:hover,
 .endTryAgain:hover {
   background: #fff;
 }
+
 .endTryAgain {
   background: #95c3e8;
 }
+
 .endSaveScore {
   background: #ffd154;
 }
+
+/* Responsive styles */
 @media (max-width: 500px) {
   .gameName {
     font-size: 41px;

@@ -1,9 +1,12 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/* Body styles */
 body { 
     display: flex;
     flex-direction: column;
@@ -12,13 +15,16 @@ body {
     min-height: 90vh;
     background-color: #2b87d1;
 }
-body.win{
+
+body.win {
     -webkit-animation: bodyShine 1s;
 }
-body.lose{
+
+body.lose {
     -webkit-animation: bodyShineRed 1s;
-    
 }
+
+/* Main navigation styles */
 .main-nav {
     display: flex;
     position: fixed;
@@ -31,22 +37,25 @@ body.lose{
     z-index: 1;
     top: 0;
     flex-wrap: nowrap;
-  }
-  .nav-bar-cont {
+}
+
+.nav-bar-cont {
     display: flex;
     justify-content: space-between;
     max-width: 1010px;
     padding: 0 20px;
     width: 100%;
-  }
-  .main-nav .first-two-nav-comp,
-  .main-nav .second-two-nav-comp {
+}
+
+.main-nav .first-two-nav-comp,
+.main-nav .second-two-nav-comp {
     display: flex;
-  }
-  .main-nav .first-two-nav-comp .first-one,
-  .main-nav .first-two-nav-comp .second-one,
-  .second-nav-bar-components-first-comp,
-  .second-nav-bar-components-second-comp {
+}
+
+.main-nav .first-two-nav-comp .first-one,
+.main-nav .first-two-nav-comp .second-one,
+.second-nav-bar-components-first-comp,
+.second-nav-bar-components-second-comp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,42 +64,56 @@ body.lose{
     text-decoration: none;
     color: #000;
     flex-wrap: nowrap;
-  }
-  .first-one:hover,
-  .second-one:hover,
-  .second-nav-bar-components-first-comp:hover,
-  .second-nav-bar-components-second-comp:hover {
+}
+
+.first-one:hover,
+.second-one:hover,
+.second-nav-bar-components-first-comp:hover,
+.second-nav-bar-components-second-comp:hover {
     background-color: #f2f2f2;
-  }
-@keyframes bodyShine{
-    50%{
+}
+
+/* Animation styles */
+@keyframes bodyShine {
+    50% {
         background: #3aa4f9;
-    }100%{
+    }
+    100% {
         background: #2b87d1;
     }
 }
-@keyframes bodyShineRed{
+
+@keyframes bodyShineRed {
     0% {
         background: #e26a6a;
-      }
-      100% {
+    }
+    100% {
         background: #2b87d1;
-      }
+    }
 }
+
+/* Start menu styles */
 .start-menu {
     user-select: none;
     animation: startScreenAppearAni 0.65s;
 }
+
 @keyframes startScreenAppearAni {
     0% {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0px);
+        opacity: 1;
+        transform: translateY(0px);
     }
-  }
+}
+
+.start-menu.hide {
+    display: none;
+}
+
+/* Logo styles */
 .logo {
     display: flex;
     justify-content: center;
@@ -98,6 +121,7 @@ body.lose{
     -webkit-animation: logoAnimation 2s infinite;
     margin-bottom: 44px;
 }
+
 @-webkit-keyframes logoAnimation {
     0% {
         opacity: 0.6;
@@ -109,6 +133,8 @@ body.lose{
         opacity: 0.6;
     }
 }
+
+/* Game name styles */
 .game-name h1 {
     display: flex;
     justify-content: center;
@@ -120,6 +146,8 @@ body.lose{
     margin-bottom: 15px;
     text-align: center;
 }
+
+/* Description styles */
 .description h2 {
     display: flex;
     justify-content: center;
@@ -130,11 +158,14 @@ body.lose{
     margin-bottom: 32px;
     text-align: center;
 }
+
+/* Button styles */
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .start-Btn {
     background-color: #ffd154;
     padding: 12px 30px;
@@ -150,10 +181,8 @@ body.lose{
 .start-Btn:hover {
     background-color: #fff;
 }
-.start-menu.hide {
-    display: none;
-}
-/********************************************start menu ends here******************************************************/
+
+/* Show nums screen styles */
 .show-num-screen {
     display: flex;
     flex-direction: column;
@@ -161,18 +190,20 @@ body.lose{
     align-items: center;
     user-select: none;
 }
+
 .number {
     font-size: 100px;
     color: #fff;
     flex-wrap: wrap;
 }
+
 .bcktimer {
     background: #224061;
     height: 2px;
     width: 120px;
 }
+
 #frttimer {
-    
     background-color: #fff;
     height: 2px;
     width: 120px;
@@ -180,10 +211,12 @@ body.lose{
     transform: translateY(-2px);
     transition: 0.06s;
 }
+
 .show-num-screen.hide {
     display: none;
 }
-/********************************************show nums screen ends here******************************************************/
+
+/* Enter showed nums screen styles */
 .enter-showed-num {
     display: flex;
     flex-direction: column;
@@ -191,18 +224,22 @@ body.lose{
     align-items: center;
     user-select: none;
 }
+
 .enter-showed-num.hide {
     display: none;
 }
+
 .question h2 {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
 }
+
 .question {
     padding-bottom: 3px;
     text-align: center;
 }
+
 .press-enter {
     font-weight: 500;
     font-size: 18px;
@@ -210,6 +247,7 @@ body.lose{
     padding-bottom: 26px;
     text-align: center;
 }
+
 .submit-btn {
     margin-top: 32px;
     background-color: #ffd154;
@@ -222,9 +260,11 @@ body.lose{
     cursor: pointer;
     transition: background 0.1s;
 }
+
 .submit-btn:hover {
     background-color: #fff;
 }
+
 .input-field-container {
     max-width: 950px;
     margin-right: 20px;
@@ -232,7 +272,6 @@ body.lose{
 
 .input-seen-num {
     width: 100%;
-
     background: #226cbb;
     border: none;
     padding: 10px;
@@ -241,16 +280,18 @@ body.lose{
     font-size: 50px;
     color: white;
 }
+
 .input-seen-num:focus {
     outline: none !important;
     border: solid 3px #54a2dd;
 }
-/********************************************enter seen nums screen ends here******************************************************/
+
+/* Win screen styles */
 .win-screen.hide {
     display: none;
-
     user-select: none;
 }
+
 .answer {
     display: flex;
     flex-direction: column;
@@ -258,11 +299,13 @@ body.lose{
     color: #aacfed;
     font-size: 20px;
 }
+
 .answer span {
     color: #fff;
     font-size: 40px;
     margin-top: 2px;
 }
+
 .your-answer {
     display: flex;
     flex-direction: column;
@@ -270,12 +313,14 @@ body.lose{
     color: #aacfed;
     font-size: 20px;
 }
+
 .your-answer span {
     color: #fff;
     font-size: 40px;
     margin-top: 2px;
     margin-bottom: 26px;
 }
+
 .level {
     display: flex;
     justify-content: center;
@@ -283,14 +328,15 @@ body.lose{
     font-size: 60px;
     color: #fff;
 }
+
 .btncont {
     display: flex;
-   
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-.nextBtn,.saveScoreBtn {
+
+.nextBtn, .saveScoreBtn {
     margin-top: 32px;
     background-color: #ffd154;
     padding: 12px 30px;
@@ -302,14 +348,17 @@ body.lose{
     cursor: pointer;
     transition: background 0.1s;
 }
+
 .nextBtn:hover {
     background-color: #fff;
 }
-/********************************************wind and answer screen ends here******************************************************/
-.lose-screen.hide{
+
+/* Lose screen styles */
+.lose-screen.hide {
     display: none;
 }
-.tryAgainBtn{
+
+.tryAgainBtn {
     margin-top: 32px;
     background-color: #95c3e8;
     padding: 12px 30px;
@@ -322,10 +371,12 @@ body.lose{
     transition: background 0.1s;
     margin-left: 10px;
 }
-.tryAgainBtn:hover ,.saveScoreBtn:hover{
+
+.tryAgainBtn:hover, .saveScoreBtn:hover {
     background-color: #fff;
 }
-.lose-screen p{
+
+.lose-screen p {
     font-size: 18px;
     color: #fff;
     margin-top: 35px;

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body {
   background-color: #2b87d1;
   display: flex;
@@ -12,6 +13,7 @@ body {
   min-height: 90vh;
   user-select: none;
 }
+
 .main-nav {
   display: flex;
   position: fixed;
@@ -25,6 +27,7 @@ body {
   top: 0;
   flex-wrap: nowrap;
 }
+
 .nav-bar-cont {
   display: flex;
   justify-content: space-between;
@@ -32,10 +35,12 @@ body {
   padding: 0 20px;
   width: 100%;
 }
+
 .main-nav .first-two-nav-comp,
 .main-nav .second-two-nav-comp {
   display: flex;
 }
+
 .main-nav .first-two-nav-comp .first-one,
 .main-nav .first-two-nav-comp .second-one,
 .second-nav-bar-components-first-comp,
@@ -49,13 +54,14 @@ body {
   color: #000;
   flex-wrap: nowrap;
 }
+
 .first-one:hover,
 .second-one:hover,
 .second-nav-bar-components-first-comp:hover,
 .second-nav-bar-components-second-comp:hover {
   background-color: #f2f2f2;
 }
-/************************************************************************/
+
 .lives-and-score {
   display: flex;
   align-items: center;
@@ -65,18 +71,15 @@ body {
   font-size: 24px;
   color: #87c5eb;
 }
-.lives-and-score .lives-left {
-  color: #fff;
-  border-left: solid 2.5px #87c5eb;
-  padding-left: 7px;
-  margin-right: 25px;
-}
+
+.lives-and-score .lives-left,
 .lives-and-score .score-earned {
   color: #fff;
   border-left: solid 2.5px #87c5eb;
   padding-left: 7px;
   margin-right: 25px;
 }
+
 .random-word {
   display: flex;
   justify-content: center;
@@ -87,12 +90,14 @@ body {
   height: 52px;
   color: #fff;
 }
+
 .Btns {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .seenBtn,
 .newBtn,
 .start-btn,
@@ -109,9 +114,11 @@ body {
   margin-top: 32px;
   cursor: pointer;
 }
+
 .newBtn {
   margin-left: 20px;
 }
+
 .seenBtn:hover,
 .newBtn:hover,
 .start-btn:hover,
@@ -119,10 +126,12 @@ body {
 .save-score-btn:hover {
   background-color: #fff;
 }
+
 .play-area.hide {
   display: none;
   pointer-events: none;
 }
+
 .start-menu {
   color: #fff;
   display: flex;
@@ -131,21 +140,25 @@ body {
   align-items: center;
   animation: startScreenAppearAni 0.65s;
 }
+
 .game-name {
   font-size: 78px;
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 40px;
 }
+
 .desctription {
   font-size: 18px;
   flex-wrap: wrap;
   text-align: center;
 }
+
 .logo {
   margin-bottom: 35px;
   animation: logoAni 2.3s infinite;
 }
+
 @keyframes logoAni {
   0% {
     opacity: 0.6;
@@ -157,6 +170,7 @@ body {
     opacity: 0.6;
   }
 }
+
 @keyframes startScreenAppearAni {
   0% {
     opacity: 0;
@@ -167,58 +181,66 @@ body {
     transform: translateY(0px);
   }
 }
+
 .start-menu.hide {
   display: none;
   pointer-events: none;
 }
+
 .end-menu {
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: #fff;
 }
+
 .end-logo {
   margin-bottom: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.end-menu h6 {
+
+.end-menu h6,
+.end-menu h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   margin-bottom: 3px;
 }
+
 .end-menu h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 80px;
   margin-bottom: 35px;
 }
+
 .end-menu h1 span {
   padding-right: 20px;
 }
+
 .end-description {
   flex-wrap: wrap;
   text-align: center;
   font-size: 18px;
 }
+
 .end-btns {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-items: center;
 }
+
 .try-again-btn {
   background-color: #95c3e8;
   margin-left: 3px;
 }
+
 .save-score-btn {
   margin-right: 3px;
 }
+
 .end-menu.hide {
   display: none;
   pointer-events: none;

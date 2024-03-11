@@ -1,9 +1,12 @@
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+/* Body styles */
 body {
   background: #2b87d1;
   display: flex;
@@ -11,6 +14,8 @@ body {
   align-items: center;
   min-height: 90vh;
 }
+
+/* Main navigation styles */
 .main-nav {
   display: flex;
   position: fixed;
@@ -24,6 +29,7 @@ body {
   top: 0;
   flex-wrap: nowrap;
 }
+
 .nav-bar-cont {
   display: flex;
   justify-content: space-between;
@@ -31,10 +37,12 @@ body {
   padding: 0 20px;
   width: 100%;
 }
+
 .main-nav .first-two-nav-comp,
 .main-nav .second-two-nav-comp {
   display: flex;
 }
+
 .main-nav .first-two-nav-comp .first-one,
 .main-nav .first-two-nav-comp .second-one,
 .second-nav-bar-components-first-comp,
@@ -48,13 +56,15 @@ body {
   color: #000;
   flex-wrap: nowrap;
 }
+
 .first-one:hover,
 .second-one:hover,
 .second-nav-bar-components-first-comp:hover,
 .second-nav-bar-components-second-comp:hover {
   background-color: #f2f2f2;
 }
-/*******************************************************************/
+
+/* Start menu styles */
 .start-menu {
   display: flex;
   flex-direction: column;
@@ -64,6 +74,7 @@ body {
   user-select: none;
   cursor: pointer;
 }
+
 @keyframes startScreenAppearAni {
   0% {
     opacity: 0;
@@ -74,12 +85,14 @@ body {
     transform: translateY(0px);
   }
 }
+
 .target-cont {
   height: 100px;
   width: 100px;
   margin-bottom: 34px;
   animation: 0.1s startTargetAppearAni;
 }
+
 @keyframes startTargetAppearAni {
   0% {
     transform: scale(0);
@@ -96,6 +109,7 @@ body {
   cursor: pointer;
   transform: translate(50%, 50%);
 }
+
 .target-background {
   position: absolute;
   border-radius: 50%;
@@ -105,6 +119,7 @@ body {
   top: 50px;
   transform: translate(-50%, -50%);
 }
+
 .circles {
   position: absolute;
   border-radius: 50%;
@@ -112,12 +127,14 @@ body {
   border: 2px solid white;
   transform: translate(-50%, -50%);
 }
+
 .lines {
   position: absolute;
   background: white;
   top: 50px;
   transform: translate(-50%, -50%);
 }
+
 .start-menu div h1 {
   color: #fff;
   font-size: 80px;
@@ -125,6 +142,7 @@ body {
   margin-bottom: 20px;
   animation: startScreenAppearAni 0.55s;
 }
+
 .start-menu p {
   font-size: 18px;
   line-height: 26px;
@@ -132,23 +150,28 @@ body {
   flex-wrap: wrap;
   animation: startScreenAppearAni 0.55s;
 }
+
 .start-menu.hide {
   display: none;
 }
-/*****************************************play zone*************************************************/
+
+/* Play zone styles */
 .up-text {
   color: #a8ceec;
   font-size: 28px;
   text-align: center;
 }
+
 .up-text span {
   color: #fff;
 }
+
 .play-zone {
   position: relative;
   width: 870px;
   height: 460px;
 }
+
 .target-cont-play {
   position: absolute;
   z-index: 2;
@@ -159,10 +182,12 @@ body {
 .play-screen {
   cursor: pointer;
 }
+
 .play-screen.hide {
   display: none;
 }
-/*****************************************result screen*************************************************/
+
+/* Result screen styles */
 .result-screen {
   display: flex;
   flex-direction: column;
@@ -171,18 +196,22 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
 .text-below-logo {
   font-size: 24px;
   margin-bottom: 6px;
 }
+
 .result {
   font-size: 80px;
   margin-bottom: 25px;
 }
+
 .save-score-text {
   font-size: 18px;
   margin-bottom: 25px;
 }
+
 .save-score-btn,
 .try-again-btn {
   border: none;
@@ -195,17 +224,21 @@ body {
   cursor: pointer;
   transition: background 0.12s;
 }
+
 .save-score-btn:hover,
 .try-again-btn:hover {
   background-color: #fff;
 }
+
 .try-again-btn {
   background-color: #95c3e8;
   margin-left: 5px;
 }
+
 .logo {
   margin-bottom: 30px;
 }
+
 .result-screen.hide {
   display: none;
 }

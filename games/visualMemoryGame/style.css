@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body {
   background-color: #2b87d1;
   display: flex;
@@ -16,9 +17,11 @@ body {
 body.win {
   -webkit-animation: winShineAni 0.9s;
 }
+
 body.lose {
   -webkit-animation: loseShineAni 0.7s;
 }
+
 .main-nav {
   display: flex;
   position: fixed;
@@ -32,6 +35,7 @@ body.lose {
   top: 0;
   flex-wrap: nowrap;
 }
+
 .nav-bar-cont {
   display: flex;
   justify-content: space-between;
@@ -39,10 +43,12 @@ body.lose {
   padding: 0 20px;
   width: 100%;
 }
+
 .main-nav .first-two-nav-comp,
 .main-nav .second-two-nav-comp {
   display: flex;
 }
+
 .main-nav .first-two-nav-comp .first-one,
 .main-nav .first-two-nav-comp .second-one,
 .second-nav-bar-components-first-comp,
@@ -56,13 +62,14 @@ body.lose {
   color: #000;
   flex-wrap: nowrap;
 }
+
 .first-one:hover,
 .second-one:hover,
 .second-nav-bar-components-first-comp:hover,
 .second-nav-bar-components-second-comp:hover {
   background-color: #f2f2f2;
 }
-/*******************************************************************/
+
 @keyframes loseShineAni {
   30% {
     background: #eb7979;
@@ -71,6 +78,7 @@ body.lose {
     background: #2b87d1;
   }
 }
+
 @keyframes winShineAni {
   50% {
     background: #47a6f5;
@@ -79,6 +87,7 @@ body.lose {
     background: #2b87d1;
   }
 }
+
 /******************************start menu************************************/
 .start-menu {
   display: flex;
@@ -88,6 +97,7 @@ body.lose {
   user-select: none;
   animation: startScreenAppearAni 0.65s;
 }
+
 @keyframes startScreenAppearAni {
   0% {
     opacity: 0;
@@ -98,6 +108,7 @@ body.lose {
     transform: translateY(0px);
   }
 }
+
 .logo {
   width: 100px;
   height: 100px;
@@ -107,6 +118,7 @@ body.lose {
   margin-bottom: 11px;
   -webkit-animation: logoAni 2s infinite;
 }
+
 @keyframes logoAni {
   0% {
     opacity: 0.6;
@@ -118,6 +130,7 @@ body.lose {
     opacity: 0.6;
   }
 }
+
 .lsqr,
 .sqr-with-hole {
   height: 45.31px;
@@ -126,17 +139,20 @@ body.lose {
   border-radius: 8px;
   display: block;
 }
+
 .sqr-with-hole {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .sqr-with-hole div {
   height: 30.51px;
   width: 30.51px;
   background: #2b87d1;
   border-radius: 1.5px;
 }
+
 .texts {
   display: flex;
   flex-direction: column;
@@ -145,13 +161,16 @@ body.lose {
   flex-wrap: wrap;
   text-align: center;
 }
+
 .texts h1 {
   font-size: 80px;
 }
+
 .description {
   font-size: 24px;
   margin-top: 6px;
 }
+
 .Start-Btn,
 .save-score {
   background: #ffd154;
@@ -165,15 +184,16 @@ body.lose {
   border-radius: 3px;
   margin-top: 30px;
 }
+
 .Start-Btn:hover,
 .save-score:hover,
 .try-again:hover {
   background: #fff2ce;
 }
+
 /******************************end menu************************************/
 .end-menu {
   display: flex;
-
   flex-direction: column;
   cursor: pointer;
   text-align: center;
@@ -182,6 +202,7 @@ body.lose {
   align-items: center;
   user-select: none;
 }
+
 .end-logo {
   width: 80px;
   height: 80px;
@@ -190,6 +211,7 @@ body.lose {
   flex-wrap: wrap;
   margin-bottom: 36px;
 }
+
 .esqr,
 .esqr-with-hole {
   height: 36.25px;
@@ -198,22 +220,26 @@ body.lose {
   border-radius: 6px;
   display: block;
 }
+
 .esqr-with-hole {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .esqr-with-hole div {
   height: 24.4px;
   width: 24.4px;
   background: #2b87d1;
   border-radius: 1.5px;
 }
+
 .end-menu h6 {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
 }
+
 .end-menu h1 {
   font-size: 80px;
   color: #fff;
@@ -221,10 +247,12 @@ body.lose {
   margin-bottom: 40px;
   margin-top: 8.5px;
 }
+
 .disc {
   color: #fff;
   font-size: 18px;
 }
+
 .try-again {
   background: #95c3e8;
   border: none;
@@ -238,10 +266,12 @@ body.lose {
   margin-top: 30px;
   margin-left: 5px;
 }
+
 /******************************game page************************************/
 .game {
   cursor: pointer;
 }
+
 .upbar {
   display: flex;
   text-align: center;
@@ -250,6 +280,7 @@ body.lose {
   margin-left: 30px;
   margin-bottom: 36px;
 }
+
 .upbar h3 {
   display: flex;
   color: #aacfed;
@@ -257,46 +288,56 @@ body.lose {
   font-weight: 500;
   margin-right: 35px;
 }
+
 .upbar h3 div {
   color: #fff;
   margin-left: 10px;
 }
+
 .hearts .heart {
   color: #fff;
   height: 28px;
   margin: -2px -2px;
 }
+
 .section {
   display: flex;
   width: 100%;
-
   height: 132px;
   align-items: center;
   justify-content: center;
 }
+
 .sqr {
   background: #2573c1;
   cursor: pointer;
   border: solid transparent;
 }
+
 .sqr.win1 {
   -webkit-animation: winShineAni1 0.9s;
 }
+
 .sqr.right.win1 {
   -webkit-animation: winShineAni1 0.9s;
 }
+
 .sqr.miss.win1 {
   -webkit-animation: winShineAni1 0.9s;
 }
+
 .sqr.lose1 {
   -webkit-animation: loseShineAni1 0.7s;
 }
+
 .sqr.right.lose1 {
   -webkit-animation: loseShineAni1 0.7s;
 }
+
 .sqr.miss.lose1 {
   -webkit-animation: loseShineAni1 0.7s;
 }
+
 @keyframes loseShineAni1 {
   30% {
     border-color: #eb7979;
@@ -305,6 +346,7 @@ body.lose {
     border-color: #2b87d1;
   }
 }
+
 @keyframes winShineAni1 {
   50% {
     border-color: #47a6f5;
@@ -318,23 +360,28 @@ body.lose {
   background: #fff;
   -webkit-animation: showani 0.38s;
 }
+
 @keyframes showani {
   100% {
     transform: rotateX(180deg);
   }
 }
+
 .sqr.hide {
   background: #2573c1;
   -webkit-animation: hideani 0.38s;
 }
+
 .sqr.win1.hide {
   background: #2573c1;
   -webkit-animation: hideani 0.38s;
 }
+
 .sqr.lose1.hide {
   background: #2573c1;
   -webkit-animation: hideani 0.38s;
 }
+
 @keyframes hideani {
   100% {
     transform: rotateX(-180deg);
@@ -345,15 +392,18 @@ body.lose {
   background: #fff;
   -webkit-animation: hideani 0.38s;
 }
+
 @keyframes rightani {
   100% {
     transform: rotateX(180deg);
   }
 }
+
 .sqr.miss {
   background: #154368;
   -webkit-animation: missani 0.32s;
 }
+
 @keyframes missani {
   20% {
     transform: translateX(-2.3px);
@@ -371,15 +421,18 @@ body.lose {
     transform: translateX(0);
   }
 }
+
 /******************************hide************************************/
 .start-menu.hide {
   display: none;
   pointer-events: none;
 }
+
 .end-menu.hide {
   display: none;
   pointer-events: none;
 }
+
 .game.hide {
   display: none;
   pointer-events: none;
